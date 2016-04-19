@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%=title %></title>
+    <link rel= "stylesheet"  href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+</head>
+
+<body>
+<div class="clearfix page-nav">
+    <% if(user){ %>
+    <div class="pull-left nav-username">欢迎你，<%= user.username %>！ </div>
+    <div class="pull-left"><a href="/post">发表</a> </div>
+    <div class="pull-right nav-quit"><a href="/quit"> 退出</a> </div>
+    <% }else{ %>
+    <div class="pull-right nav-register"><a href="/register">注册</a> </div>
+    <div class="pull-right nav-login"><a href="/login">登录</a> </div>
+    <% } %>
+
+
+
+</div>
+
+<div class="text-center">
+    <% if(success){ %>
+    <p style="color: #ff1f15"><%= success %></p>
+    <% } %>
+
+
+    <% if(error){ %>
+    <p style="color: #ff1f15"><%= error %></p>
+    <% } %>
+</div>
+
+
+
+

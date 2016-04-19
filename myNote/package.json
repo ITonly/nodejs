@@ -1,0 +1,24 @@
+{
+  "name": "mynote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^1.1.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "moment": "^2.12.0",
+    "mongoose": "^4.4.10",
+    "passport": "^0.3.2",
+    "passport-github": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shidi",
+  "license": "ISC"
+}
